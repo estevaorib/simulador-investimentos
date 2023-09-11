@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Dados</title>
+</head>
+
+<body>
+    <header>
+        <h2>Desenvolvimento Web</h2>
+    </header>
+
+    <main>
+        <h1>Simulação</h1>
+    <form method="get" action="">
+        <fieldset>
+            <legend>Dados do Investimento</legend>
+            
+            <div class="inputs">
+                <div class="entradas">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" name="cliente" id="cliente" value="Sr. Ratatoskr"  required>
+                </div>
+                <div class="entradas">
+                    <label for="aporte_inicial">Aporte inicial:</label>
+                    <input type="number" name="aporte_inicial" id="aporte_inicial" value="500" min="1" max="999999.99" required>
+                    <label for="aporte_inicial"> (Limite: 999.999,99)</label>
+                </div>
+
+                <div class="entradas">
+                    <label for="rendimento_mensal">Rendimento mensal:</label>
+                    <input type="number" name="rendimento_mensal" id="rendimento_mensal" value="0.7" step="0.1" min="0.1" max="20" required>
+                    <label for="rendimento_mensal"> (Limite: 0.1% a 20%)</label>
+                </div>
+
+                <div class="entradas">
+                    <label for="aporte_mensal">Aporte mensal:</label>
+                    <input type="number" name="aporte_mensal" id="aporte_mensal" value="350" min="1" required>
+                    <label for="aporte_mensal"> (Limite: 999.999,99)</label><br>
+                </div>
+
+                <div class="entradas">
+                    <label for="periodo">Período(meses):</label>
+                    <input type="number" name="periodo" id="periodo" value="1" min="1" max="480" required>
+                    <label for="periodo"> (Limite: 1 a 480:)</label>
+                </div>
+                
+            </div>
+
+            <input type="submit" class="botao" name="botao" value="Processar">
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <p class="copy">Estevão Ribeiro e Ítalo Augusto - &copy;2023</p>
+</footer>
+</body>
+</html>
